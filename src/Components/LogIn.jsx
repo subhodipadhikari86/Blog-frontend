@@ -3,7 +3,7 @@ import { LogUser } from "../ApiCall";
 import { useDispatch } from "react-redux";
 import { storeUser } from "../Features/UserSlice";
 import { useNavigate } from "react-router-dom";
-import { RegisterSchema } from "../../../Backend/Zod/Auth";
+import { RegisterSchema } from '../Zod/Auth';
 import { toast } from "sonner";
 import { Spin } from "antd";
 
