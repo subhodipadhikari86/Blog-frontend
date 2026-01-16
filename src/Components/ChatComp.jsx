@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { useQuery, useMutation, QueryClient, useQueryClient } from '@tanstack/react-query'
 import { getMsg, sendMsg } from '../ApiCall'
 import { useMemo } from 'react'
+const API = "https://blog-backend-zf94.onrender.com";
 const ChatComp = ({ id }) => {
     const userid = id
     // console.log(userid);
@@ -32,7 +33,7 @@ const ChatComp = ({ id }) => {
     //     withCredentials: true
     // });
 
-    let socket = useMemo(() => io("http://localhost:8000", {
+    let socket = useMemo(() => io(`${API}`, {
         withCredentials: true
     }), [])
 
