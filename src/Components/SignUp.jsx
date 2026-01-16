@@ -3,7 +3,7 @@ import { regUser } from '../ApiCall';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { storeUser } from '../Features/UserSlice';
 import { useDispatch, useSelector } from 'react-redux';
-import { RegisterSchema } from '../../../Backend/Zod/Auth';
+import { RegisterSchema } from '../Zod/Auth';
 import { Spin } from 'antd';
 const Signup = () => {
   const [formData, setFormData] = useState({
