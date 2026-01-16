@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = import.meta.env.VITE_API_URL || "https://blog-backend-zf94.onrender.com/api/v1";
+const API = "https://blog-backend-zf94.onrender.com/api/v1";
 export const regUser = async (formdata) => {
     try {
         const res = await axios.post(`${API}/user/register`, formdata, {
