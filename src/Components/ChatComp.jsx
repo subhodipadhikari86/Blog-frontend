@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { useQuery, useMutation, QueryClient, useQueryClient } from '@tanstack/react-query'
 import { getMsg, sendMsg } from '../ApiCall'
 import { useMemo } from 'react'
-const API = "https://blog-backend-zf94.onrender.com";
+const API = "https://blog-backend-zf94.onrender.com" || "http://localhost:8000";
 const ChatComp = ({ id }) => {
     const userid = id
     // console.log(userid);
