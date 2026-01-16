@@ -1,6 +1,6 @@
 import React from 'react'
 import { Formik, Form, ErrorMessage, Field, useFormikContext } from "formik"
-import { RegisterSchema } from '../../../Backend/Zod/Auth.js'
+import { RegisterSchema } from '../Zod/Auth.js'
 import { useState } from 'react'
 import {Button} from "../Components/ui/button.jsx"
 import {Toaster} from "../Components/ui/sonner"
